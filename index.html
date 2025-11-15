@@ -22,8 +22,29 @@ body {
 
 
 <div class="center">
-  <p>Luscious.</p>
+  <p id="hair-description">Henry's hair is legendary.</p>
 </div>
+
+<script>
+  (function () {
+    const descriptions = [
+      "Henry's hair is effortlessly majestic.",
+      "Henry's hair radiates pure confidence.",
+      "Henry's hair is the very definition of lush.",
+      "Henry's hair shines with unstoppable brilliance.",
+      "Henry's hair is a masterpiece of texture.",
+      "Henry's hair brings instant sunshine to the room.",
+      "Henry's hair is gloriously full of life.",
+      "Henry's hair is a symphony of perfect waves.",
+      "Henry's hair is dazzlingly well-behaved today.",
+      "Henry's hair is flawlessly photo-ready."
+    ];
+
+    const description =
+      descriptions[Math.floor(Math.random() * descriptions.length)];
+    document.getElementById("hair-description").textContent = description;
+  })();
+</script>
 
 </body>
 </html>
